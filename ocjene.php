@@ -1,6 +1,6 @@
 <?php 
 	include "config.php";
-	$sql = "SELECT * FROM ucenik WHERE Razred=3;";
+	$sql = "SELECT * FROM ocjene WHERE Id=123456;";
 	$result = $konekcija->query($sql);
 	
 ?>
@@ -36,14 +36,13 @@
 
 <body>
     <div class="container">
-        <h2>Ucenici III Razreda</h2>
+        <h2>Ocjene</h2>
     <table class="table">
     <thead>
         <tr>
-            <th>Razred</th>
-            <th>Ime</th>
-            <th>Prezime</th>
-            <th>Vladanje</th>
+            <th>Predmet</th>
+            <th>Ocjena</th>
+            
             
        </tr>
     </thead>
@@ -55,11 +54,8 @@
         ?>
 
                     <tr>
-                    <td><a href=""><?php echo $row['Razred']; ?></a></td>
-                    <td><a href=""><?php echo $row['Ime']; ?></a></td>
-                    <td><a href=""><?php echo $row['Prezime'];?></a></td>
-                    <td><a href=""><?php echo $row['Vladanje'];?></a></td>
-                    <td><a class="btn btn-info" href="Docjena.php?id=<?php echo $row['Id']; ?>">Ocjena</a>  <a class="btn btn-info" href="Dodsustvo.php?id=<?php echo $row['Id']; ?>">Odsustvo</a><a class="btn btn-info" href="Prikaz3.php?id=<?php echo $row['Id']; ?>">Prikaz</a></td>
+                    <td><a href=""><?php echo $row['Predmet']; ?></a></td>
+                    <td><a href=""><?php echo $row['Ocjena']; ?></a></td>
                     </tr>                       
 
         <?php       }
@@ -70,7 +66,7 @@
 
     </tbody>
 </table>
-        <a class="btn btn-danger" href="index.html">Nazad</a>
+        <a class="btn btn-danger" href="indexUser.html">Nazad</a>
     </div> 
     
 </body>

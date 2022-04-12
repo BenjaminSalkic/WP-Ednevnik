@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ba-BA">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Dodaj ocjenu</title>
+        <link href="moj.css" rel="stylesheet" type="text/css" />
+    </head>
+<body style="background: gray;">
+    <div style="background: silver;" class="forum">
+<h2>Dodaj ocjenu</h2>
+<form action="./Docjena.php" method="POST">
+  <fieldset>
+      Predmet:
+   <select name="Predmet" id="">
+       <option value="BAZE PODATAKA">Baze Podataka</option>
+       <option value="BOSANSKI JEZIK">Bosanski Jezik</option>
+       <option value="DEMOKRATIJA">Demokratija</option>
+       <option value="ENGLESKI JEZIK">Engleski Jezik</option>
+       <option value="FILOZOFIJA">Filozofija</option>
+       <option value="INFORMATIKA">Informatika</option>
+       <option value="LATINSKI JEZIK">Latinski Jezik</option>
+       <option value="LIKOVNA KULTURA">Likovna Kultura</option>
+       <option value="MATEMATIKA">Matematika</option>
+       <option value="MUZICKA KULTURA">Muzicka Kultura</option>
+       <option value="NJEMACKI JEZIK">Njemacki Jezik</option>
+       <option value="PROGRAMIRANJE">Programiranje</option>
+       <option value="TJELESNI ODGOJ">Tjelesni Odgoj</option>
+       <option value="VJERONAUKA">Vjeronauka</option>
+       <option value="WEB PROGRAMIRANJE">Web Programiranje</option>
+   </select>
+   <br>
+    Ocjena:<br>
+    <input type="radio" name="Ocjena" value="1">1
+    <input type="radio" name="Ocjena" value="2">2
+    <input type="radio" name="Ocjena" value="3">3
+    <input type="radio" name="Ocjena" value="4">4
+    <input type="radio" name="Ocjena" value="5">5
+   
+    <br><br>
+    <input type="submit" name="submit" value="Unesi">
+  </fieldset>
+</div>
+</form>
+</body>
+</html>

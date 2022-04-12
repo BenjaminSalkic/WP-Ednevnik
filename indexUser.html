@@ -72,6 +72,65 @@ body{
   transition: margin-left .5s;
   padding: 20px;
 }
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+  display: flex;
+}
+.btn:hover{
+    background-color: #036a44;
+}
+
+.btn{
+    background-color: #04AA6D;
+    border-radius: 4px;
+    border: none;
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+}
+.btnWrap{
+    transition: margin-left .5s;
+background-color: rgb(167, 167, 167);
+width: 780px;
+height: 100px;
+border-radius: 20px;
+margin-left: 37%;
+display: flex;
+justify-content: center;
+}
+.img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
+}
+.user{
+    transition: margin-left .5s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 36%;
+    width: 700px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    background-color:rgb(167, 167, 167) ;
+    border-radius: 20px;
+}
+.activ{
+    background-color: rgb(167, 167, 167);
+    width: 700px;
+    height: 1000px;
+    border-radius: 20px;
+}
+.strana{
+    display: flexbox;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    background-color: #818181;
+}
     </style>
 </head>
 <body>
@@ -79,17 +138,29 @@ body{
         <a style="padding: 0px;" class="active" href="#home" onclick="openNav()"><img src="hamburger.jpg" alt="" width="43px" height="43px"></a>
         <a href="#news">User</a>
         <a href="https://www.scilijas.com.ba/">JU Srednjoškolski centar "Nedžad Ibrišimović" Ilijaš</a>
-        <a id="Logout" href="#about">LogOut</a>
+        <a id="Logout" href="login.php">LogOut</a>
       </div>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Razredi</a>
-        <a href="#">Raspored</a>
+        <a href="ocjene.php">Ocjene</a>
+        <a href="odsustva.php">Odsustva</a>
         <a href="#">Poruke</a>
-        <a href="#">Settings</a>
+        <a href="settings.html">Settings</a>
       </div>
      
       <div id="main">
+        <div class="activ">
+        </div>
+        <div class="strana">
+      <div class="user" id="user">
+          <h1>User</h1>
+          <img src="img_avatar2.png" alt="" class="img">
+      </div>
+      <div class="btnWrap" id="btnWrap">
+        <h1>Podatci o uceniku</h1>
+        
+      </div>
+      </div>
       </div>
       <script>
           function openNav() {

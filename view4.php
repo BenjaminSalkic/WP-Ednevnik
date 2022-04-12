@@ -15,15 +15,21 @@
             text-align: center;
             background-color: #818181;
         }
+    thead tr:hover:first-child{
+        background:rgb(167, 167, 167);
+    }
   tr:hover {
-     background: grey;
+     background: silver;
 	}
 	td a {
 	  display: block;
 	  }
       .container{
           background-color: rgb(167, 167, 167);
-          border-radius: 30px;
+          height: 100vh;
+      }
+      h2{
+          padding-bottom: 50px;
       }
 </style>
 </head>
@@ -50,10 +56,10 @@
 
                     <tr>
                     <td><a href=""><?php echo $row['Razred']; ?></a></td>
-                    <td><a href=""><?php echo $row['Ime']; ?></a></td>
+                    <td><a href="Prikaz.php?id=<?php echo $row['Id']; ?>"><?php echo $row['Ime']; ?></a></td>
                     <td><a href=""><?php echo $row['Prezime'];?></a></td>
                     <td><a href=""><?php echo $row['Vladanje'];?></a></td>
-                    <td><a class="btn btn-info" href="update.php?id=<?php echo $row['Id']; ?>">Ocjena</a>  <a class="btn btn-info" href="delete.php?id=<?php echo $row['Id']; ?>">Odsustvo</a></td>
+                    <td><a class="btn btn-info" href="Docjena.php?id=<?php echo $row['Id']; ?>">Ocjena</a>  <a class="btn btn-info" href="Dodsustvo.php?id=<?php echo $row['Id']; ?>">Odsustvo</a> <a class="btn btn-info" href="Prikaz4.php?id=<?php echo $row['Id']; ?>">Prikaz</a></td>
                     </tr>                       
 
         <?php       }
@@ -64,7 +70,8 @@
 
     </tbody>
 </table>
+        <a class="btn btn-danger" href="index.html">Nazad</a>
     </div> 
-    <a class="btn btn-danger">Nazad</a>
+    
 </body>
 </html>

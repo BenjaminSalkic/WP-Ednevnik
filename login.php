@@ -132,18 +132,18 @@ span.psw {
         ?>
         if(Provjera!=0 && Name=='Admin'){
 
-            alert('Login succ');
+            alert('Login successful');
             window.location.href = 'index.html';
 
         }
         else if(Provjera!=0 && Name=='User'){
 
-            alert('Login succ');
+            alert('Login successful');
             window.location.href = 'indexUser.html';
         }
         else{
 
-            alert('Login failed');
+            alert('Login failed!!');
         }
         }
     </script>
